@@ -37,6 +37,17 @@ body{
   
    
 }
+
+@media(max-width:400px){
+    #about{
+      display: grid;
+      grid-template-columns: 300px;
+  
+    }
+  
+   
+}
+
 @media(max-width:400px){
     #about,
     #experience,
@@ -168,7 +179,7 @@ body{
     font-weight: 1000;
 }
 
-.mobile_nav_links:hover{
+.mobile_nav_links:hover,.mobile_nav_links:focus{
     color: cornsilk;
   }
   .mobile_nav_links:active{
@@ -244,7 +255,9 @@ body{
     font-weight: 1000;
 }
 
-.nav_links:hover{
+.nav_links:hover,.nav_links:focus{
+    
+    content: "\f099";
   color: cornsilk;
 }
 .nav_links:active{
@@ -287,11 +300,11 @@ body{
 }
 @media(min-width:1130px){
     .first-name{   
-        animation: pump 5000ms 2s infinite alternate;
+        animation: pump 5000ms 0s infinite alternate;
         display: block;
     }
     .second-name{
-        animation: moving 5000ms 2s infinite alternate;
+        animation: moving 5000ms 0s infinite alternate;
     }
     
 
@@ -356,6 +369,8 @@ body{
 }
 .link_icons{
     display: flex;
+    width :500px;
+    height:48px;
 }
 @media(max-width:400px){
     .link_icons> img{
@@ -394,7 +409,7 @@ body{
  .title{
      width: 100vw;
      font-size: 1.5rem;
-    
+     animation: none;
  }
 }
 .sub_title{
@@ -444,6 +459,7 @@ p{
       
     }
 }
+
 .tools >h2{
     width: 500px;
     color:thistle;
@@ -456,12 +472,27 @@ p{
 }
 .image_tools{
     display: flex;
+    width: 500px;
+
+}
+@media(max-width:530px){
+    .image_tools{
+        display:grid;
+        grid-template-columns: 85px 85px;
+        grid-template-rows: 85px  85px;
+        grid-gap: 10px;
+      
+    }
+}
+.image_tools > img{
+    margin-left:20px;
+    
 }
 .my_interests{
-    width: 500px;
+    width: 800px;
 }
 @media(max-width:1130px){
-    .interests{
+    .my_interests{
         width: 100vw;
       
     }
@@ -471,11 +502,11 @@ p{
     font-size:2em;
 }
 .list_container{
-    list-style: url('images/tick.png');
+    list-style: url('images/light-bulb.svg');
     color: rgb(209, 127, 209);
 }
 .interest_list{
-    list-style: url('images/trophy.png');
+    list-style: url('images/crown.svg');
     vertical-align: middle;
     color: coral;
 }
