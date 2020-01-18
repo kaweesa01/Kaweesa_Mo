@@ -351,7 +351,7 @@ body{
 }
 @media(max-width:1130px){
     .about_content_container,.location,.owner-name{
-        width: 100vw;
+        width: 80vw;
     }
 }
 .about-content{
@@ -365,6 +365,11 @@ body{
 @media(max-width:1130px){
     .about-content{
         width: 100vw;
+    }
+}
+@media(max-width:400px){
+    .about-content{
+        width: 80vw;
     }
 }
 .link_icons{
@@ -450,6 +455,13 @@ p{
       
     }
 }
+
+@media(max-width:400px){
+    .history{
+        width: 80vw;
+      
+    }
+}
 .tools{
     width: 500px thistle
 }
@@ -494,6 +506,12 @@ p{
 @media(max-width:1130px){
     .my_interests{
         width: 100vw;
+      
+    }
+}
+@media(max-width:400px){
+    .my_interests{
+        width: 80vw;
       
     }
 }
